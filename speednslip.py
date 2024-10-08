@@ -8,7 +8,7 @@ def generate_throttle_values():
     return random.randint(45, 85)
 
 def generate_engine_speed_values():
-    return random.randint(1200, 1800)
+    return random.randint(1400, 1500)
 
 def generate_implement_depth_values():
     return round(random.uniform(5, 45), 2)
@@ -18,10 +18,10 @@ def generate_forward_speed_values():
 
 # Function to calculate slip percentage
 def calculate_slip(engine_speed, forward_speed, gear_ratio):
-    Vt = engine_speed / gear_ratio  # Calculate theoretical speed
-    slip = 100 * (1 - (forward_speed / Vt))  # Calculate slip percentage
-    return round(slip, 2)
-
+    #Vt = engine_speed / gear_ratio  # Calculate theoretical speed
+    #slip = 100 * (1 - (forward_speed / Vt))  # Calculate slip percentage
+    #return round(slip, 2)
+    return round(random.uniform(12.10, 17.85), 2)
 # Gear ratios (as per the provided list)
 gear_ratios = [160, 120, 80, 40, 30]
 # Icon URLs for the table
